@@ -1,0 +1,447 @@
+<html>
+    <head>
+        <title>Rushi's Portfolio</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="Compressed-jQuery/jquery-3.5.0.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/f81bd83344.js" crossorigin="anonymous"></script>
+
+        <style >
+
+            html{
+                scroll-behavior: smooth;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+
+            .color{
+                color: black;
+                font-weight: bold;
+                text-align: center  ;
+            }
+
+            .color:hover{
+                color: turquoise;
+            }
+
+            #home{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                height: 760px;
+            }
+
+            .box{
+                position: relative;
+                max-width: 600px;
+                padding: 50px;
+                box-shadow: 0 10px 30px  rgba(0, 0, 0, .9);
+                overflow: hidden;
+                background-color: black;
+                color: #000;
+                border-radius: 20px;
+            }
+
+            #heading{
+                position: relative;
+                margin: 0 0 20px;
+                padding: 0;
+                color: white;
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .text{
+                position: relative;
+                margin: 0;
+                padding: 0;
+                color: #D5D8DC ;    
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .media{
+                position: absolute;
+                left: 50%;
+                transform: translate(-53%, -50%);
+                padding-top: 40px;
+            }
+
+            .marginTop{
+                margin-top: 13px;
+            }
+
+            .mediaIcons{
+                display: inline;
+                font-size: 20px;
+                padding: 20px 20px;
+                color: white;
+                transition: .5s;
+                text-align: center;
+            }
+
+            .mediaIcons:hover{
+                color: turquoise;
+            }
+
+            .white{
+                color: white;
+            }
+
+            #me{
+                width: 100%;
+                background-color: #2B2B2B;
+                
+            }
+
+            #aboutMe{
+                color: #D5D8DC ;  
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: turquoise;
+            }
+
+            #aboutMe:hover{
+                color: white;
+            }
+
+            #resume:hover{
+                background-color: turquoise;
+                border-color: turquoise;
+            }
+
+            .center{
+                text-align: center;
+            }
+
+            .styleText{
+                color: #D5D8DC ;
+                font-size: 18px;
+            }
+
+            #skills{
+                width: 100%;
+                background-color: white;
+            }
+
+            #skillsText{
+                color: black;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: turquoise;
+            }
+
+            #skillsText:hover{
+                color: #2C3E50  ;  
+            }
+
+            #projects{
+                width: 100%;
+                background-color: #EBEEEE;
+            }
+
+            #androidApk{
+                color: black;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            #projectTitle{
+                font-weight: bold;
+                padding-top: 20px;
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: turquoise;
+            }
+
+            #crAlloter{
+               background-color: white;
+               margin: 20px auto;
+               box-shadow: 0 10px 30px  rgba(0, 0, 0, .9);
+            }
+
+            #CRalloterTitle{
+                font-weight: bold;
+            }
+
+            #CRalloterTitle{
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            #image{
+                width: 100px;
+                height: 100px;
+                background-image: url(logo.png);
+                background-size: cover;
+                float: right;
+                margin-right: 30px;
+            }
+
+            #imageOne{
+                width: 100px;
+                height: 100px;
+                background-image: url(icon2.png);
+                background-size: cover;
+                float: right;
+                margin-right: 30px;
+            }
+
+            #contact{
+                width: 100%;
+                background-color: #0F0F0F;
+            }
+
+            #contactText{
+                color: #D5D8DC ;
+                padding-top: 50px;
+                text-align: center;
+            }
+
+            .details{
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            #download:hover{
+                background-color: turquoise;
+            }
+
+            #navbarIcon{
+                background-image: url(icon.png);
+                background-size: cover;
+            }
+
+            #email:hover{
+                text-decoration: none;
+                color: turquoise;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg">
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="navbarIcon" class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link color" href="#home">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color" href="#me">ABOUT ME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color" href="#skills">SKILLS</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link color" href="#projects">PROJECTS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div id="home">
+
+            <div class="box">
+                <p class="text">Hello I'm</p>
+                <h2 id="heading"><strong style="color: turquoise;">R</strong>ushi <strong style="color: turquoise;">D</strong>onga.</h2>
+                <p class="text">I'm a <span class="white">Student</span>, a <span class="white">developer</span>, creating something Awesome.</p>
+                <p class="text">Let's start Scrolling and learn more about me.</p>
+                <hr style="background-color: white;">
+
+                <div class="media">
+                    <ul>
+                        <a href="https://github.com/RushiDonga" target="_blank"><li class="mediaIcons"><i class="fab fa-github"></i></li></a>
+                        <a href="https://www.linkedin.com/in/rushi-donga-04092000" target="_blank"><li class="mediaIcons"><i class="fab fa-linkedin"></i></li></a>
+                        <a href="https://www.instagram.com/stuart_49_/" target="_blank"><li class="mediaIcons"><i class="fab fa-instagram"></i></li></a>
+                        <a href="mailto:rushi.donga9537@gmail.com" target="_blank"><li class="mediaIcons"><i class="fas fa-envelope"></i></li></a>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="me">
+            
+            <div class="row">
+                <div class="container" style="margin-top: 60px;">
+
+                    <div class="col-sm-4" style="float: left;">
+                        <h3 id="aboutMe" >About Me</h3>
+                    </div>
+
+                    <div class="col-sm-8" style="float: right;">
+                        <ul>
+                            <li class="styleText">I'm currently an Engineering Student having my <span class="white">B-tech</span> at <span class="white">Charotar University of Science and Technology</span>.</li><br>
+                            <li class="styleText">I enjoy solving the Real World problems through my <span class="white">Android Application</span> as well my <span class="white">Website</span> and hence call myself as a <span class="white">developer</span></li><br>
+                            <li class="styleText">When I'm not Coding I enjoy getting the things <span class="white">Checked</span> in my <span class="white">Bucket List</span></li><br>
+                            <li class="styleText">I believe in achieving my <span class="white">Goals</span>, getting off the Comfort Zone, and the Present Situation cannot become an obstacle in achieving the Goals</li><br>
+                            <li class="styleText">Always looking forward for an <span class="white">opportunity</span> so that I could involve myself in a really <span class="white">exciting</span> stuff</li><br>
+                            <li class="styleText">High Goals, No Fear, No Boundary, <span class="white">Let the work Speak</span> <span style="color: turquoise;">;)</span></li>
+                            <a target="_blank" href="resume.pdf"><button id="resume" class="btn btn-light aboutMe" style="margin: 20 auto;" type="button"><strong>My Resume</strong></button></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="skills">
+
+            <div class="row">
+                <div class="container" style="margin-top: 60px;">
+
+                    <div class="col-sm-4" style="float: left;">
+                        <h3 id="skillsText">Skills</h3>
+                    </div>
+
+                    <div class="col-sm-8" style="float: right;">
+
+                        <ul style="float: left;">
+                            <h4 style="font-weight: bold;">Languages</h4>
+                            <li>Java</li>
+                            <li>Dart</li>
+                            <li>C/ C++</li>
+                            <li>HTML/ CSS</li>
+                        </ul>
+
+                        <ul style="margin-left: 20px; float: left;">
+                            <h4 style="font-weight: bold;">Database</h4>
+                            <li>Firebase Database</li>
+                        </ul>
+
+                        <ul style="margin-left: 20px; float: left;">
+                            <h4 style="font-weight: bold;">FrameWork</h4>
+                            <li>Bootstrap</li>
+                        </ul>
+
+                        <ul style="margin-left: 20px; float: left; padding-bottom: 100px;" >
+                            <h4 style="font-weight: bold;">Core Skills</h4>
+                            <li>Android Applications</li>
+                            <li>Flutter Applications</li>
+                            <li>Web Development</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="projects">
+
+            <h3 id="projectTitle">Projects</h3>
+
+            <div class="container" style="margin-top: 30px;">
+                <div class="row">
+
+                    <div class="col-sm-4" style="float: left;">
+                        <h3 id="androidApk" style="margin-top: 12px;">Android Applications</h3>
+                    </div>
+
+                    <div class="col-sm-6" id="crAlloter" style="float: right;">
+                        <h4 id="CRalloterTitle">CR Alloter</h4>
+                        <img id="image">
+                        <ul style="margin-top: 0px;">
+                            <h5 style="margin-top: 10px; margin-bottom: 2px; font-weight: bold;">Aim :</h5>
+                            <li>Collage Elections</li>
+                            <h5 style="padding-top: 10px; margin-bottom: 2px; font-weight: bold;">Technology Used :</h5>
+                            <li>Shared Preferences</li>
+                            <li>Firebase Database</li>
+                        </ul>
+
+                        <p style="padding: 0px 15px;">It is basically the modern Solution to the Collage Elections, which says no the Mess that happens while counting of Votes as well as the Error in Counting</p>
+                        <button id="download" class="btn btn-light" style="margin-bottom: 10px; margin-left: 15px; border-color: black;"><strong><a href="https://github.com/RushiDonga/CR_Alloter/blob/master/app-debug.apk">Download</a></strong></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container" style="margin-top: 30px;">
+                <div class="row">
+
+                    <div class="col-sm-4" style="float: left;">
+                        <h3 id="androidApk" style="margin-top: 12px;">Flutter Applications</h3>
+                    </div>
+
+                    <div class="col-sm-6" id="crAlloter" style="float: right;">
+                        <h4 id="CRalloterTitle">Electee</h4>
+                        <img id="imageOne">
+                        <ul style="margin-top: 0px;">
+                            <h5 style="margin-top: 10px; margin-bottom: 2px; font-weight: bold;">Aim :</h5>
+                            <li>Elections</li>
+                            <h5 style="padding-top: 10px; margin-bottom: 2px; font-weight: bold;">Technology Used :</h5>
+                            <li>Firebase Database</li>
+                            <li>Flutter Technology</li>
+                        </ul>
+
+                        <p style="padding: 0px 15px;">Electee is a cross platform Application having the Solutions to the Elections that are beiing conducterd in the Collages.</p>
+                        <button id="download" class="btn btn-light" style="margin-bottom: 10px; margin-left: 15px; border-color: black;"><strong><a href="https://github.com/RushiDonga/Electee">Download</a></strong></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact">
+
+            <h3 id="contactText">Contact</h3>
+            <h4 class="details">Rushi Donga.</h4>
+            <a id="email" href="mailto:rushi.donga9537@gmail.com"><h4 class="details">rushi.donga9537@gmail.com</h4></a>
+
+            <div class="media marginTop">
+                <ul>
+                    <a href="https://github.com/RushiDonga" target="_blank"><li class="mediaIcons"><i class="fab fa-github"></i></li></a>
+                    <a href="https://www.linkedin.com/in/rushi-donga-04092000" target="_blank"><li class="mediaIcons"><i class="fab fa-linkedin"></i></li></a>
+                    <a href="https://www.instagram.com/stuart_49_/" target="_blank"><li class="mediaIcons"><i class="fab fa-instagram"></i></li></a>
+                    <a href="mailto:rushi.donga9537@gmail.com" target="_blank"><li class="mediaIcons"><i class="fas fa-envelope"></i></li></a>
+                </ul>
+            </div>
+
+            <p style="text-align: center; padding-bottom: 80px; padding-top: 50px;">Made with <span>&hearts;</span> by Rushi Donga</p>
+        </div>
+
+    </body>
+</html>
